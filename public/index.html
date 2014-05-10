@@ -29,7 +29,7 @@
                 <!-- Loop over the links in $scope.links -->
                 <div class="checkbox" ng-repeat="link in links">
                     <label>
-                        <a href="{{link.url}}">{{link.title}}</a> Delete? <input type="checkbox" ng-click="deleteLink(link._id)">                        
+                        <a href="http://{{link.url}}" target="_blank">{{link.title}}</a> <button class="btn btn-danger btn-xs" ng-click="deleteLink(link._id)">Delete</button>
                     </label>
                 </div>
 
@@ -48,7 +48,7 @@
                     <input type="text" class="form-control input-lg text-center" placeholder="What is the name of the link?" ng-model="formData.title">                 
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control input-lg text-center" placeholder="URL goes here" ng-model="formData.url">                 
+                    <input type="text" class="form-control input-lg text-center" placeholder="URL (Example: google.com)" ng-model="formData.url">                 
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg" ng-click="createLink()" >Add Link</button>
             </form>

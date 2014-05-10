@@ -16,7 +16,7 @@
 
   mongoose = require('mongoose');
 
-  mongoose.connect('LOCATION_TO_MONGO_DB');
+  mongoose.connect('mongodb://linkListUser:linkListPass@novus.modulusmongo.net:27017/sIzez5yb');
 
   app.use(express["static"](__dirname + '/public'));
 

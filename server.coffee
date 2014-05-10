@@ -8,7 +8,7 @@ app = express()
 
 mongoose = require 'mongoose'
 
-mongoose.connect 'LOCATION_TO_MONGO_DB'
+mongoose.connect 'mongodb://linkListUser:linkListPass@novus.modulusmongo.net:27017/sIzez5yb'
 
 # app.configure ->
 #     # sets the static files to /public
